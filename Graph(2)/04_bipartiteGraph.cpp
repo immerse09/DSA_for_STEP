@@ -108,7 +108,7 @@ class Graph {
             for(int v : neighbors){
                 if(!vis[v]){
                     vis[v] = true;
-                    color[v] = !color[curr];
+                    color[v] = !color[curr]; // opposite color
                     q.push(v);
                 } else {
                     if(color[v] == color[curr]){
@@ -156,7 +156,7 @@ int main(){
 //             list<int> neighbors = l[curr];
 
 //             for(int v : neighbors){
-//                 if(!vis[v] == -1){ //unvisited
+//                 if(color[v] == -1){ //unvisited
 //                     color[v] = !color[curr];
 //                     q.push(v);
 //                 } else {
